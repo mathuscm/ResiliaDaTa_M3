@@ -1,0 +1,35 @@
+1. Quais são as entidades necessárias?
+- Para o modelo deste projeto, foi assimilado a necessidade de 3 entidades, sendo elas:
+a. Colaborador
+b. Empresa
+c. Tecnologia
+========================================================================================
+2. Quais são os principais campos e seus respectivos tipos?
+- Os campos fundamentais e seus tipos, respectivamente:
+Colaborador: 
+* ID (inteiro)
+* Nome (string)
+* Função (string)
+
+Empresa:
+* ID (inteiro)
+* Nome (string)
+* Endereço (string)
+* CNPJ (inteiro)
+* Contato (inteiro)
+* Operação (string)
+
+Tecnologia:
+* ID (inteiro)
+* Nome (string)
+* Categoria (string)
+========================================================================================
+3. Como essas entidades estão relacionadas?
+- Estas entidades se encontram da seguinte maneira: UMA empresa pode usar DIVERSAS
+tecnologias, então sua realação é de 1 p/ N; e UMA empresa têm VÁRIOS funcionários,
+sua relação também é de 1 p/ N. UM funcionário pode trabalhar somente em UMA empresa,
+sua relação é de 1 p/ 1; dentro desta empresa, UM funcionário pode usar mais de DUAS
+tecnologias, sua relação é de 1 p/ N.
+========================================================================================
+4. Simule 2 registros para cada entidade.
+** REGISTROS NAS IMAGENS DA PASTA ** 
