@@ -29,7 +29,7 @@ lá você encontrará perguntas e respostas a respeito deste projeto!
 
 Se você gostou, muito obrigado! Caso tenha alguma dica de melhoria, pode entrar em contato comigo:
 * Email: cordaromatheus@gmail.com
-* LinkedIn: https://www.linkedin.com/in/mscordaro/
+* [LinkedIn](https://www.linkedin.com/in/mscordaro/)
 
 
 
