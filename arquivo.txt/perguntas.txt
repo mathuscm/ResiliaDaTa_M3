@@ -1,35 +1,39 @@
 1. Quais são as entidades necessárias?
 - Para o modelo deste projeto, foi assimilado a necessidade de 3 entidades, sendo elas:
-a. Colaborador
-b. Empresa
-c. Tecnologia
+    a. Colaborador
+    b. Empresa
+    c. Tecnologia
 ========================================================================================
 2. Quais são os principais campos e seus respectivos tipos?
 - Os campos fundamentais e seus tipos, respectivamente:
 Colaborador: 
-* ID (inteiro)
-* Nome (string)
-* Função (string)
+    * ID (chave primária da entidade Colaborador)
+    * Nome (string)
+    * Função (string)
+    * Empresa_ID_Empresa (chave estrangeira referenciando a entidade Empresa a qual o Colaborador trabalha)
 
 Empresa:
-* ID (inteiro)
-* Nome (string)
-* Endereço (string)
-* CNPJ (inteiro)
-* Contato (inteiro)
-* Operação (string)
+    * ID (chave primária da entidade Empresa)
+    * Nome (string)
+    * Endereço (string)
+    * CNPJ (inteiro)
+    * Contato (inteiro)
+    * Operação (string)
+    * Tecnologia_ID_Tecnologia (chave estrangeira referenciando a entidade Tecnologia da qual a Empresa utiliza)
 
 Tecnologia:
-* ID (inteiro)
-* Nome (string)
-* Categoria (string)
+    * ID (chave primária da entidade Tecnologia)
+    * Nome (string)
+    * Categoria (string)
 ========================================================================================
 3. Como essas entidades estão relacionadas?
-- Estas entidades se encontram da seguinte maneira: UMA empresa pode usar DIVERSAS
-tecnologias, então sua realação é de 1 p/ N; e UMA empresa têm VÁRIOS funcionários,
-sua relação também é de 1 p/ N. UM funcionário pode trabalhar somente em UMA empresa,
-sua relação é de 1 p/ 1; dentro desta empresa, UM funcionário pode usar mais de DUAS
-tecnologias, sua relação é de 1 p/ N.
+- Estas entidades se encontram da seguinte maneira: 
+    1. UMA empresa pode usar DIVERSAS tecnologias, então sua realação é de 1 p/ N;  
+    2. UMA empresa têm VÁRIOS funcionários, sua relação também é de 1 p/ N; 
+    3. UM funcionário pode trabalhar somente em UMA empresa, sua relação é de 1 p/ 1; 
+    4. UM funcionário pode usar mais de DUAS tecnologias, sua relação é de 1 p/ N.
 ========================================================================================
 4. Simule 2 registros para cada entidade.
-** REGISTROS NAS IMAGENS DA PASTA ** 
+    a. Entidade Empresa: https://github.com/mathuscm/ResiliaDaTa_M3/blob/main/imagens/entidade.jpeg 
+    b. Entidade Colaboradores: https://github.com/mathuscm/ResiliaDaTa_M3/blob/main/imagens/entidade1.jpeg
+    c. Entidade Tecnologia: https://github.com/mathuscm/ResiliaDaTa_M3/blob/main/imagens/entidade2.jpeg
