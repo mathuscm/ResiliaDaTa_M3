@@ -19,18 +19,27 @@ estrutural de um modelo de Banco de Dados nas formas conceitual e lógica, exemp
 as entidades criadas se relacionam, a tipagem de seus elementos e dois registros como exemplo
 para melhor visualização. 
 
-* Entidades
-
 Trabalharemos com as [entidades](https://github.com/mathuscm/ResiliaDaTa_M3/tree/main/imagens): 
 - Colaboradores
 - Empresa
 - Tecnologia
+- Registro Geral
 
 Abaixo o exemplo gráfico dos relacionamentos
 
 <div align="center"> 
-  <img src="https://raw.githubusercontent.com/mathuscm/ResiliaDaTa_M3/df758598751c540e056d0dff61c9ecc0c3203bf5/imagens/resliadata_diagrama.jpg" width="500"/>
+  <img src="https://raw.githubusercontent.com/mathuscm/ResiliaDaTa_M3/8433104f92f8b7eaf336000f06e03589d560b833/imagens/mod_logico.jpg" width="500"/>
 </div>
+
+O exemplo do relacionamento na representação lógica é trabalhado no modelo estrela, no qual temos o desenho da tabela fato REGISTRO_GERAL como entidade principal de registro das chaves das entidades EMPRESA, COLABORADOR e TECNOLOGIA. 
+
+A partir deste relacionamento a representação conceitual se alinha com o diagrama acima e a sequencia relacional parte da entidade principal demonstrada. 
+
+<div align="center"> 
+  <img src="https://raw.githubusercontent.com/mathuscm/ResiliaDaTa_M3/main/imagens/mod_conceitual.jpg" width="500"/>
+</div>
+
+
 
 * ARQUIVO.TXT 
 
