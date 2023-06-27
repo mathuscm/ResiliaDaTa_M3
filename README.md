@@ -31,7 +31,7 @@ Abaixo o exemplo gráfico dos relacionamentos
   <img src="https://raw.githubusercontent.com/mathuscm/ResiliaDaTa_M3/main/imagens/modelo-logico%20(1).jpg" width="500"/>
 </div>
 
-O exemplo do relacionamento na representação lógica é trabalhado no modelo estrela, no qual temos o desenho da tabela fato REGISTRO_GERAL como entidade principal de registro das chaves das entidades EMPRESA, COLABORADOR e TECNOLOGIA. 
+O exemplo do relacionamento da representação lógica temos o desenho da tabela fato REGISTRO_GERAL como entidade principal de registro das chaves das entidades EMPRESA, COLABORADOR e TECNOLOGIA. 
 
 A partir deste relacionamento a representação conceitual se alinha com o diagrama acima e a sequencia relacional parte da entidade principal demonstrada. 
 
