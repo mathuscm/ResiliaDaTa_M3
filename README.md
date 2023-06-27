@@ -36,7 +36,7 @@ O exemplo do relacionamento na representação lógica é trabalhado no modelo e
 A partir deste relacionamento a representação conceitual se alinha com o diagrama acima e a sequencia relacional parte da entidade principal demonstrada. 
 
 <div align="center"> 
-  <img src="https://raw.githubusercontent.com/mathuscm/ResiliaDaTa_M3/main/imagens/mod_conceitual.jpg" width="500"/>
+  <img src="https://raw.githubusercontent.com/mathuscm/ResiliaDaTa_M3/main/imagens/modelo_conceitual%20(1).jpg" width="500"/>
 </div>
 
 
