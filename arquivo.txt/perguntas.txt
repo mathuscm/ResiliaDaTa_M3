@@ -3,37 +3,63 @@
     a. Colaborador
     b. Empresa
     c. Tecnologia
+    d. Registro Geral
 ========================================================================================
 2. Quais são os principais campos e seus respectivos tipos?
 - Os campos fundamentais e seus tipos, respectivamente:
 Colaborador: 
-    * ID (chave primária da entidade Colaborador)
-    * Nome (string)
-    * Função (string)
-    * Empresa_ID_Empresa (chave estrangeira referenciando a entidade Empresa a qual o Colaborador trabalha)
+    * ID (INTERGER PK)
+    * Nome VARCHAR (100)
+    * Função VARCHAR (15)
 
 Empresa:
-    * ID (chave primária da entidade Empresa)
-    * Nome (string)
-    * Endereço (string)
-    * CNPJ (inteiro)
-    * Contato (inteiro)
-    * Operação (string)
-    * Tecnologia_ID_Tecnologia (chave estrangeira referenciando a entidade Tecnologia da qual a Empresa utiliza)
+    * ID (INTERGER PK)
+    * Nome VARCHAR (100)
+    * Endereço VARCHAR (50)
+    * CNPJ VARCHAR (20)
+    * Contato VARCHAR (50)
+    * Operação VARCHAR (50)
 
 Tecnologia:
-    * ID (chave primária da entidade Tecnologia)
-    * Nome (string)
-    * Categoria (string)
+    * ID INTERGER PK
+    * Nome VARCHAR (100)
+    * Categoria VARCHAR (15)
+
+Registro Geral:
+    * ID (INTERGER PK)
+    * ID_COLABORADOR (INTERGER FK)
+    * ID_EMPRESA (INTERGER FK)
+    * ID_TECNOLOGIA (INTERGER FK)
 ========================================================================================
 3. Como essas entidades estão relacionadas?
 - Estas entidades se encontram da seguinte maneira: 
     1. UMA empresa pode usar DIVERSAS tecnologias, então sua realação é de 1 p/ N;  
     2. UMA empresa têm VÁRIOS funcionários, sua relação também é de 1 p/ N; 
     3. UM funcionário pode trabalhar somente em UMA empresa, sua relação é de 1 p/ 1; 
-    4. UM funcionário pode usar mais de DUAS tecnologias, sua relação é de 1 p/ N.
+    4. UMA tabela de REGISTROS GERAIS contém todos os registros e informações que estão
+    relacionados a ela e alinhados entre si, neste caso: COLABORADORES, EMPRESA E TECNOLOGIA,
+    sua relação, simultaneamente é 1 p/ n
+
+    
 ========================================================================================
 4. Simule 2 registros para cada entidade.
-    a. Entidade Empresa: https://github.com/mathuscm/ResiliaDaTa_M3/blob/main/imagens/entidade.jpeg 
-    b. Entidade Colaboradores: https://github.com/mathuscm/ResiliaDaTa_M3/blob/main/imagens/entidade1.jpeg
-    c. Entidade Tecnologia: https://github.com/mathuscm/ResiliaDaTa_M3/blob/main/imagens/entidade2.jpeg
+
+    Entidade empresa:
+    ID	NOME_EMPRESA	ENDEREÇO	    CNPJ	        CONTATO	            OPERAÇÃO	    ID_TECNOLOGIA
+    1	A'Naliza	    Rua 1, nº 21	01.101/0001	    55 16 99000-0001	Data Analytics	1
+    2	Hacksília	    Rua 3, nº 33	02.220/2002	    55 21 98800-1001	Cyber Security	2
+
+    Entidade Colaboradores:
+    ID	NOME	    FUNÇÃO	           ID_EMPRESA
+    1	Santiago	Analista	           1
+    2	Messias	    Segurança de dados	   2
+   
+   Entidade Tecnologia:
+    ID	 NOME	   CATEGORIA
+    1	 SQL	   Data Analytics
+    2	 Python	   Cyber Security
+
+    Entidade Registro Geral:
+    ID_EMPRESA	ID_TECNOLOGIA	ID_COLABORADOR
+    1	        1	            1
+    2	        2	            2
