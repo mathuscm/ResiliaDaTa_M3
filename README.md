@@ -28,7 +28,7 @@ Trabalharemos com as [entidades](https://github.com/mathuscm/ResiliaDaTa_M3/tree
 Abaixo o exemplo gráfico dos relacionamentos
 
 <div align="center"> 
-  <img src="https://raw.githubusercontent.com/mathuscm/ResiliaDaTa_M3/8433104f92f8b7eaf336000f06e03589d560b833/imagens/mod_logico.jpg" width="500"/>
+  <img src="https://raw.githubusercontent.com/mathuscm/ResiliaDaTa_M3/main/imagens/modelo-logico%20(1).jpg" width="500"/>
 </div>
 
 O exemplo do relacionamento na representação lógica é trabalhado no modelo estrela, no qual temos o desenho da tabela fato REGISTRO_GERAL como entidade principal de registro das chaves das entidades EMPRESA, COLABORADOR e TECNOLOGIA. 
@@ -36,7 +36,7 @@ O exemplo do relacionamento na representação lógica é trabalhado no modelo e
 A partir deste relacionamento a representação conceitual se alinha com o diagrama acima e a sequencia relacional parte da entidade principal demonstrada. 
 
 <div align="center"> 
-  <img src="https://raw.githubusercontent.com/mathuscm/ResiliaDaTa_M3/main/imagens/mod_conceitual.jpg" width="500"/>
+  <img src="https://raw.githubusercontent.com/mathuscm/ResiliaDaTa_M3/main/imagens/modelo_conceitual%20(1).jpg" width="500"/>
 </div>
 
 
