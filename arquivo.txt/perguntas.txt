@@ -33,6 +33,11 @@ Registro Geral:
 ========================================================================================
 3. Como essas entidades estão relacionadas?
 - Estas entidades se encontram da seguinte maneira: 
+    - A entidade Empresa contém a chave da entidade Tecnologia;
+    - A entidade Colaborador contém a chave da entidade Empresa;
+    - A entidade Registro Geral contém as chaves das entidades Empresa, Tecnologia e 
+    Colaborador.
+
     1. UMA empresa pode usar DIVERSAS tecnologias, então sua realação é de 1 p/ N;  
     2. UMA empresa têm VÁRIOS funcionários, sua relação também é de 1 p/ N; 
     3. UM funcionário pode trabalhar somente em UMA empresa, sua relação é de 1 p/ 1; 
